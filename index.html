@@ -26,11 +26,13 @@
             <a-asset-item id="animated-asset" src="models/Purse_01.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker preset=’hiro’>
+        <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" preset=’hiro’>
             <a-entity
                 gltf-model="#animated-asset"
-                scale="2">
+                scale="2"
+                rotation="0 45 0" >
             </a-entity>
+            <a-entity height="20px" text="value: Hello World;"></a-entity>
         </a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
