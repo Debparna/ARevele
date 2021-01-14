@@ -25,14 +25,12 @@
         <a-assets>
             <a-asset-item id="animated-asset" src="models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
-        <a-text position="0 2 2" color="#fff" align="center" value="WASD Keys moves you on desktop.\n\nMove circle mouse pointer to red ball and wait a few seconds." width="4"></a-text>
-        <a-sphere color="red" radius="1" position="-4 2 0" link="http://cablecenter.org"></a-sphere>
+
 
         <a-marker preset=’hiro’>
-          <a-entity
-              gltf-model="#animated-asset"
-              scale="2">
-          </a-entity>
+          <a-text position="0 2 2" color="#fff" align="center" value="WASD Keys moves you on desktop.\n\nMove circle mouse pointer to red ball and wait a few seconds." width="4"></a-text>
+          <a-sphere color="red" radius="1" position="-4 2 0" link="http://cablecenter.org"></a-sphere>
+
         </a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
