@@ -23,12 +23,14 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
         <a-assets>
-            <a-asset-item id="animated-asset" src="models/Decoration.gltf"></a-asset-item>
+            <a-asset-item id="animated-asset" src="purse/scene.gltf"></a-asset-item>
         </a-assets>
 
+        <a-marker markerhandler emitevents="true" cursor="rayOrigin: touch" id="animated-marker" preset=’hiro’>
+            <a-sphere position='0 0.5 0' color="yellow" link="http://cablecenter.org"></a-box>
+        </a-marker>
 
 
-        <a-sphere position='0 0.5 0' color="yellow" link="http://cablecenter.org"></a-box>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
